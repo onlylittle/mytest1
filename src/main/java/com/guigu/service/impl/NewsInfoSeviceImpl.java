@@ -33,7 +33,7 @@ public class NewsInfoSeviceImpl implements NewsInfoService{
 		
 		return newsInfoMapper.selectByPrimaryKey(newsId);
 	}
-
+//寻找作者
 	@Override
 	public List<NewsInfo> findbyAuthor(String newsAuthor) throws Exception {
 		NewsInfoExample example=new NewsInfoExample();
